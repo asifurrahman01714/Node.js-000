@@ -15,3 +15,9 @@ use these steps to solve it--
  3. Then right click on it and End task from the processes. 
  ```
 # Access dynamic ID- req.params.id
+# npm install cors
+# Using cors
+```bash
+var cors = require('cors');
+app.use(cors());
+```
