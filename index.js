@@ -7,8 +7,8 @@ app.use(cors());
 
 app.get('/', (req, res) => {
     const product={
-        "fruit": "apple",
-        "price": "10",
+        fruit: "apple",
+        price: "10",
     }
   res.send(product);
 })
