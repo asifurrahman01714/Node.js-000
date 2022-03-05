@@ -7,17 +7,30 @@
     <title>Client Side</title>
 </head>
 <body>
-    <p class="userName">
-        This is the user
-    </p>
+    <h1>This is the user</h1>
+    <p id="userName"></p>
+    <input type="number" name="" id="inputNumber">
+    <button type="submit" id="submit">Submit</button>
     <script>
         const userName = document.getElementById('userName');
-        fetch('http://localhost:3000/users/2')
+        const inputNumber = document.getElementById('inputNumber');
+        const submit = document.getElementById('submit');
+        submit.addEventListener('click',()=>{
+            console.log(inputNumber.value);
+            const id = inputNumber.value;
+            fetchData(id);
+        })
+
+
+        const fetchData =(id)=>{
+            fetch(`http://localhost:3000/users/${id}`)
             .then(response => response.json())
             .then(data => {
                 console.log(data);
+                userName.innerText = data.name;
             })
             .catch(error => console.log(error));
+        }
     </script>
 </body>
 </html>
