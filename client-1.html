@@ -15,7 +15,7 @@
         fetch('http://localhost:3000/users/3')
             .then(response => response.json())
             .then(data => {
-                // userName.innerHTML = data.name;
+                userName.innerHTML = data.name;
                 console.log(data);
             })
             .catch(error => console.log(error));
