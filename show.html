@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show fetchData</title>
+</head>
+<body>
+    <p id="showData"></p>
+    <h1>show data</h1>
+    <script>
+        fetch('http://localhost:3000/addUsers')
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data);
+            const showData = document.getElementById('showData').innerText = data.name;
+        });
+    </script>
+</body>
+</html>

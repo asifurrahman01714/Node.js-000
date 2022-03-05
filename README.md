@@ -22,3 +22,9 @@ var cors = require('cors');
 app.use(cors());
 ```
 # set npm start in package.json in scripts: "start": "nodemon index.js";
+# Body parser express
+```bash
+Install: npm install body-parser
+var bodyParser = require('body-parser')
+app.use(bodyParser.json())
+```
