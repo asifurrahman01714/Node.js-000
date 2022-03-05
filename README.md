@@ -5,3 +5,12 @@
 # Finding the server: http://localhost:3000/
 # .gitigonre
 # for auto save- use nodemon: npm install -g nodemon
+
+## The problem in nodemon-
+[nodemon] app crashed - waiting for file changes before starting...
+use these steps to solve it--
+```bash
+ 1. Go to the task manager
+ 2. Then look for Node.js: Server-side JavaScript
+ 3. Then right click on it and End task from the processes. 
+ ```
