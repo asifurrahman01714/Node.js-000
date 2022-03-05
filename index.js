@@ -27,6 +27,15 @@ app.get('/api/v1/products', (req, res) => {
     res.send(products);
 });
 
+// set dynamic users
+const allUsers = ["John", "Jane", "Jack"];
+app.get('/users/:id',(req, res) => {
+    const user = {
+        id: req.params.id,
+        name: "allUsers[id]"
+    }
+    res.send(user);
+})
 
 app.listen(port, () => {
   console.log(`Example listening on port ${port}`)

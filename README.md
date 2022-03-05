@@ -14,3 +14,4 @@ use these steps to solve it--
  2. Then look for Node.js: Server-side JavaScript
  3. Then right click on it and End task from the processes. 
  ```
+# Access dynamic ID- req.params.id
