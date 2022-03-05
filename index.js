@@ -7,7 +7,7 @@ app.use(cors());
 
 app.get('/', (req, res) => {
     const product={
-        fruit: "apple",
+        fruit: "apple", //data can be send to server as real object also"
         price: "10",
     }
   res.send(product);
