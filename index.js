@@ -3,7 +3,11 @@ const app = express()
 const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('Hey! I am listening to You!')
+    const product={
+        "fruit": "apple",
+        "price": "10",
+    }
+  res.send(product);
 })
 
 app.listen(port, () => {
