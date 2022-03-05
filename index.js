@@ -41,6 +41,10 @@ app.get('/users/:id',(req, res) => {
     res.send(user);
 })
 
+app.post('/addUsers', (req, res) => {
+    console.log("post request sent")
+    console.log(req.body)
+})
 app.listen(port, () => {
   console.log(`Example listening on port ${port}`)
 })
