@@ -32,10 +32,11 @@ app.get('/api/v1/products', (req, res) => {
 
 // set dynamic users
 const allUsers = ["John", "Jane", "Jack"];
+
 app.get('/users/:id',(req, res) => {
     const user = {
         id: req.params.id, // get the id from the url from request..Because user will send everything as request. and server will send it as response
-        name: "allUsers[id]"
+        name: `${allUsers[req.params.id]}`,
     }
     res.send(user);
 })

@@ -21,3 +21,4 @@ use these steps to solve it--
 var cors = require('cors');
 app.use(cors());
 ```
+# set npm start in package.json in scripts: "start": "nodemon index.js";
